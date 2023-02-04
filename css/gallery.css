@@ -1,0 +1,13 @@
+@import url(common.css);
+
+.flexback2 {
+  margin-top: 180px;
+  margin-bottom: 460px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 57px 52px;
+}
