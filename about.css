@@ -1,0 +1,63 @@
+@import url(common.css);
+
+.setsumei {
+  font-size: 32px;
+  line-height: 80px;
+  text-align: center;
+  padding-top: 117px;
+  /* テキストシャドウ */
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* フレックスボックス背景 */
+.flexback {
+  background-color: #fff;
+  width: 1152px;
+  height: 3288px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 185px;
+  margin-bottom: 190px;
+}
+
+/* 説明文 */
+p.kaisetsu {
+  /* テキストボックス */
+  background-color: #fff;
+  width: 578px;
+  height: 224px;
+  display: inline-block;
+  /* 文字 */
+  font-size: 28px;
+  line-height: 30px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+/* 大きい写真 */
+.a_246 {
+  text-align: center;
+  padding-top: 46px;
+}
+
+/* フレックスボックス */
+.flex1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 276px;
+}
+
+.flex2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+}
+
+.flex3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+}
