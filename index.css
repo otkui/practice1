@@ -37,7 +37,7 @@ section.linkback {
 
 .linkA {
   /* 背景画像 */
-  background-image: url(../img/h_1.png);
+  background-image: url(https://github.com/otkui/practice1/blob/main/img/h_1.png?raw=true);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -75,7 +75,7 @@ p.linkA a:hover {
 
 .linkG {
   /* 背景画像 */
-  background-image: url(../img/h_2.png);
+  background-image: url(https://github.com/otkui/practice1/blob/main/img/h_2.png?raw=true);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -113,7 +113,7 @@ p.linkG a:hover {
 
 .linkP {
   /* 背景画像 */
-  background-image: url(../img/h_3.png);
+  background-image: url(https://github.com/otkui/practice1/blob/main/img/h_3.png?raw=true);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
