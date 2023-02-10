@@ -10,22 +10,27 @@
   <link rel="stylesheet" href="https://otkui.github.io/practice1/about.css">
   <!-- フッターFixed -->
   <script src="https://otkui.github.io/practice1/js/footerFixed.js"></script>
+  <!-- メニューボタン実行jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <!-- minJs -->
+  <script src="https://otkui.github.io/practice1/js/jquery-3.6.3.min.js"></script>
 </head>
 
-<body>
+<body id="top">
   <div class="container">
     <header>
       <p class="toplogo"><a href="index.html"><img src="img/logo_b.png" alt="YuiOtake"></a></p>
-
-      <nav>
-        <ul>
-          <li><a href="about.html" class="active">About</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="product.html">Product</a></li>
-        </ul>
-      </nav>
-
     </header>
+
+    <!-- ハンバーガーメニューnavタグの上 -->
+    <button class="hmenu"><span></span></button>
+    <nav>
+      <ul>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="product.html">Product</a></li>
+      </ul>
+    </nav>
 
     <main>
       <p class="topimg"><img src="img/a_first.png" alt=""></p>
@@ -36,14 +41,14 @@
         <div class="flex1">
 
           <p class="kaisetsu">ノートに絵のイメージを描きます．<br>イメージができたら下描きをします．</p>
-          <p><img src="img/a_1.png" alt=""></p>
+          <p class="a_135"><img src="img/a_1.png" alt=""></p>
 
         </div>
         <p class="a_246"><img src="img/a_2.png" alt=""></p>
 
         <div class="flex2">
 
-          <p><img src="img/a_3.png" alt=""></p>
+          <p class="a_135"><img src="img/a_3.png" alt=""></p>
           <p class="kaisetsu">0.3～0.7mmの太さのゲルインキ<br>ボールペンを使い分けます．</p>
 
         </div>
@@ -52,7 +57,7 @@
         <div class="flex3">
 
           <p class="kaisetsu">彩色したいときにはカラーボールペンや<br>色鉛筆が便利です．</p>
-          <p><img src="img/a_5.png" alt=""></p>
+          <p class="a_135"><img src="img/a_5.png" alt=""></p>
 
         </div>
         <p class="a_246"><img src="img/a_6.png" alt=""></p>
@@ -71,6 +76,10 @@
 
       <p class="copyright">&copy;2023 Yui Otake Artworkspace All Rights Reserved.</p>
     </footer>
+    <!-- スリックminJs -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Jsファイル -->
+    <script src="js/script.js"></script>
   </div>
 </body>
 </html>
