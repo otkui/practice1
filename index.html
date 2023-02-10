@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yui Otake Artworkspace</title>
   <!-- CSSリンク -->
@@ -10,22 +10,25 @@
   <link rel="stylesheet" href="https://otkui.github.io/practice1/index.css">
   <!-- フッターFixed -->
   <script src="https://otkui.github.io/practice1/js/footerFixed.js"></script>
+  <!-- メニューボタン実行jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
 
 <body>
   <div class="container">
     <header>
       <p class="toplogo"><a href="index.html"><img src="img/logo_b.png" alt="YuiOtake"></a></p>
-
-      <nav>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="product.html">Product</a></li>
-        </ul>
-      </nav>
-
     </header>
+
+    <!-- ハンバーガーメニューnavタグの上 -->
+    <button class="hmenu"><span></span></button>
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="product.html">Product</a></li>
+      </ul>
+    </nav>
 
     <main>
 
@@ -48,6 +51,8 @@
 
       <p class="copyright">&copy;2023 Yui Otake Artworkspace All Rights Reserved.</p>
     </footer>
+    <script src="js/script.js"></script>
+
 
   </div>
 </body>
