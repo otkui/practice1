@@ -20,6 +20,7 @@
 
 /* 制作写真 */
 .makepic {
+  /* background-color: blue; */
   width: 500px;
   height: 665px;
   margin-left: auto;
@@ -37,6 +38,10 @@
 footer {
   margin-top: 400px;
 }
+
+/* .slider {
+  padding-bottom: 400px;
+} */
 
 /* スライド用写真 */
 .slide {
@@ -72,4 +77,79 @@ footer {
 .slick-next::before,
 .slick-prev::before {
   color: rgb(40, 36, 31);
+}
+
+/* レスポンシブ */
+@media (max-width: 575px) {
+  .calendar {
+    padding-top: 181px;
+    width: 90%;
+  }
+
+  p.setsumei2 {
+    font-size: 18px;
+    line-height: 40px;
+    margin-top: 200px;
+  }
+
+  .makepic {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .makepic {
+    /* background-color: blue; */
+    width: 80%;
+    height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+
+  .imgbox {
+    /* background-color: aqua; */
+    margin-top: 177px;
+    margin-bottom: 210px;
+  }
+
+  .slide {
+    width: 70%;
+    height: 70%;
+  }
+
+  /* スライド実行用CSS */
+  .slide img {
+    width: 70%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+    object-fit: cover;
+  }
+
+  /* slick */
+  .slick-next {
+    right: 5%;
+  }
+
+  .slick-prev {
+    left: 5%;
+  }
+
+  .slick-dots li {
+    width: 10px;
+    height: 10px;
+  }
+
+  .slick-dots {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer {
+    margin-top: 200px;
+  }
 }
