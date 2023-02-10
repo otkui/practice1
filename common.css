@@ -33,7 +33,7 @@ header {
   height: 145px;
 }
 
-header .toplogo {
+.toplogo {
   width: 300px;
   height: 100px;
   margin-top: 26px;
@@ -41,20 +41,20 @@ header .toplogo {
   opacity: 0.9;
 }
 
-header.toplogo a:hover {
+.toplogo a:hover {
   opacity: 0.7;
 }
 
-header nav .active {
+nav .active {
   font-weight: bold;
 }
 
 /* メニューの書式 */
-header nav {
+nav {
   text-align: right;
 }
 
-header nav li {
+nav li {
   display: inline;
   padding-left: 25px;
   padding-right: 25px;
@@ -79,12 +79,13 @@ footer {
 }
 
 /* ページトップボタン */
-footer .pagetop {
+footer p.pagetop {
   width: 50px;
   height: 50px;
   position: fixed;
   right: 50px;
   bottom: 10px;
+  display: none;
 }
 
 footer p.pagetop a:hover {
@@ -119,4 +120,177 @@ footer .toplogo {
   text-align: center;
   padding-top: 312px;
   padding-bottom: 38px;
+}
+
+/* レスポンシブ */
+@media (max-width: 575px) {
+  /* ヘッダーの書式 */
+  p.toplogo {
+    width: 70%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  nav li {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+  }
+
+  /* メイン */
+  h1 {
+    font-size: 30px;
+  }
+
+  /* フッターの書式 */
+  footer .toplogo {
+    width: 65%;
+    height: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 58px;
+  }
+
+  .icon {
+    width: 45px;
+    height: 45px;
+    padding-top: 100px;
+  }
+
+  .copyright {
+    font-size: 10px;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 10px;
+  }
+
+  /* ページトップボタン */
+  footer p.pagetop {
+    width: 25px;
+    height: 25px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    display: none;
+  }
+}
+
+/*-------------------------------
+ハンバーガーアイコン（モバイル用）
+-------------------------------*/
+/* 幅:40px, 高さ:40px, ボーダー:なし, 背景色:任意, FlexBox, 横:中央, 縦:中央, 配置:absolute, 上:48px, 右:5px  */
+.hmenu {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: snow;
+  /* フレックスにすることで天地左右中央にできる */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 48px;
+  right: 5px;
+}
+
+/* 幅:25px, 高さ:4px, 背景色:任意, 角丸:4px, ブロック表示, 配置:absolute, 切り替え:0.5s */
+.hmenu span,
+.hmenu span::before,
+.hmenu span::after {
+  width: 25px;
+  height: 2px;
+  background-color: rgb(40, 36, 31);
+  border-radius: 4px;
+  /* spanタグを行にしてあげる */
+  display: block;
+  position: absolute;
+  /* 切り替え:0.5s */
+  transition: 0.5s;
+}
+
+/* 内容:"", 下:12px */
+.hmenu span::before {
+  content: "";
+  bottom: 12px;
+}
+
+/* 内容:"", 上:12px */
+.hmenu span::after {
+  content: "";
+  top: 12px;
+}
+
+/* ～クリック時バツボタン～ */
+/* 背景色:unset */
+.hmenu.close span {
+  background-color: unset;
+}
+
+/* 下:0, 回転:45° */
+.hmenu.close span::before {
+  /* 上12pxを真ん中に戻す */
+  bottom: 0;
+  /* 45度回転 */
+  transform: rotate(45deg);
+}
+
+/* 上:0, 回転:-45° */
+.hmenu.close span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+/* ここまでメニューボタン */
+/* ～～～～～～～～～～～～～～～～ */
+
+/* ～575以下の時は３本線を表示させる～ */
+@media (max-width: 575px) {
+  .hmenu {
+    display: flex;
+  }
+
+  /* Aパターンモバイルメニュー */
+  /* nav {
+    display: none;
+  } */
+
+  nav li {
+    display: block;
+    text-align: center;
+  }
+
+  /* Bパターンモバイルメニュー */
+  /* 幅:0, 高さ:100%-header高さpx, ボーダー:なし, ドロップシャドウ:-3px 0 6px rgba(0, 0, 0, 0.2), 配置:absolute, 上:header高さpx, 右:0, 切り替え:0.5s, オーバーフローX:隠す, 折り返さない */
+  nav {
+    width: 0;
+    /* height: calc(100% - 160px); */
+    border: none;
+    box-shadow: -3px 0 6px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    transition: 0.5s;
+    overflow-x: hidden;
+    white-space: nowrap;
+  }
+
+  /* 幅:200px */
+  .hmenu.close + nav {
+    width: 200px;
+    /* height: 1550px; */
+    background-color: rgba(40, 36, 31, 0.8);
+  }
+
+  /* 左余白:20px, 左揃え */
+  nav li {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    color: #fff;
+  }
+  /* ～～～～～Bパターン～～～～～ */
 }
