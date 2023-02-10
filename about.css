@@ -61,3 +61,55 @@ p.kaisetsu {
   align-items: center;
   padding-top: 150px;
 }
+
+@media (max-width: 575px) {
+  .setsumei {
+    font-size: 18px;
+    line-height: 70px;
+    text-align: center;
+    padding-top: 117px;
+    /* テキストシャドウ */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  /* フレックスボックス背景 */
+  .flexback {
+    /* background-color: aquamarine; */
+    width: 90%;
+    height: 90%;
+    margin-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  /* 説明文 */
+  p.kaisetsu {
+    /* テキストボックス */
+    width: 90%;
+    height: 90%;
+    /* 文字 */
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    padding-top: 0;
+  }
+
+  /* 小さい写真 */
+  .a_135 {
+    width: 60%;
+  }
+
+  /* 大きい写真 */
+  .a_246 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+  }
+
+  .flex1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+  }
+}
