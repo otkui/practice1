@@ -31,10 +31,15 @@ $(window).scroll(function () {
   var sc = $(window).scrollTop();
   // 検証→コンソール表示でどこをスクロールしてる（数値）かわかる
   // console.log(sc);
-  // scが7００を超えたら表示
-  if (sc > 700) {
+  // scがブラウザの1/3を超えたら表示
+ if (sc > $(window).height() / 3) {
     $("footer p.pagetop").fadeIn(500);
   } else {
     $("footer p.pagetop").fadeOut(500);
   }
+});
+
+// クリック時の裏に出る薄い文字を消す
+lightbox.option({
+  showImageNumberLabel: false,
 });
