@@ -192,8 +192,8 @@ footer .toplogo {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 48px;
-  right: 5px;
+  top: 15px;
+  right: 3px;
 }
 
 /* 幅:25px, 高さ:4px, 背景色:任意, 角丸:4px, ブロック表示, 配置:absolute, 切り替え:0.5s */
