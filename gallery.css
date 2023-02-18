@@ -1,5 +1,12 @@
 @import url(https://otkui.github.io/practice1/common.css);
 
+/* ☆☆画像天地左右中央配置☆☆ */
+div#lightbox {
+  top: 50% !important;
+  position: fixed;
+  transform: translateY(-50%);
+}
+
 .flexback2 {
   margin-top: 180px;
   margin-bottom: 460px;
