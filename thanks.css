@@ -1,0 +1,73 @@
+@import url(common.css);
+
+main article p {
+  text-align: center;
+  padding-top: 100px;
+}
+.thankspic {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.attention {
+  color: gray;
+  padding-top: 50px;
+}
+
+.gotop {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.copyright {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+
+/* レスポンシブ */
+/* スマホ縦の書式 */
+@media (max-width: 575px) {
+  main article h1 {
+    font-size: 90%;
+    margin-top: 50px;
+  }
+
+  .thankspic {
+    padding-top: 10px;
+  }
+  main article .thankstext {
+    width: 80%;
+    font-size: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main article .thankstext p {
+    padding-top: 50px;
+    text-align: left;
+  }
+
+  .attention {
+    font-size: 12px;
+  }
+
+  .mail {
+    font-size: 60%;
+    padding-top: 50px;
+  }
+
+  .gotop {
+    font-size: 80%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .copyright {
+    font-size: 50%;
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
+}

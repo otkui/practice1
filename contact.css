@@ -1,0 +1,177 @@
+@import url(common.css);
+
+main article > p {
+  margin-top: 200px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* 文字サイズ:20px、行の高さ:1.5、行頭文字:・、外側左余白:1.5em、下余白:20px */
+main aside ul {
+  font-size: 20px;
+  line-height: 1.5;
+  list-style-type: disc;
+  padding-top: 100px;
+  margin-left: 1.5em;
+  padding-bottom: 20px;
+}
+
+/* 幅:80%、中央配置 */
+main form {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* FlexBox、下余白:20px、縦方向の位置:ベースライン */
+main dl div {
+  display: flex;
+  align-items: baseline;
+  padding-bottom: 20px;
+}
+
+/* asaidとformの間に余白50px */
+main dl > div {
+  padding-top: 50px;
+}
+
+/* 太字、幅:12em */
+main dt {
+  flex-basis: 12em;
+  font-weight: bold;
+}
+
+/* 文字サイズ:50px、左余白:5px */
+main dt span {
+  font-size: 20px;
+  padding-left: 5px;
+}
+
+/* 幅比率:1 */
+main dd {
+  flex: 1;
+}
+
+/* 幅:100%、内側余白:8px、文字設定:親と同じ */
+main input[type="text"],
+main input[type="email"],
+main textarea {
+  width: 100%;
+  padding: 8px;
+  /* outline: none; */
+}
+/* 選択時のアウトラインに色付け */
+input:focus {
+  outline: 1px solid rgb(40, 36, 31);
+}
+
+/* 右余白:10px */
+main dd label {
+  padding-right: 10px;
+}
+
+/* 高さ:12em、行の高さ:1.5、リサイズ:垂直 */
+main textarea {
+  height: 12em;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+/* 縦方向の位置:上、内側上余白:15px */
+main dl div:last-child dt {
+  padding-top: 15px;
+  align-self: flex-start;
+}
+
+/* 上ボーダー:線幅1px/直線/カラー#666、内側上余白:50px、中央揃え */
+main form p {
+  /* border-top: 1px solid #666; */
+  padding-top: 50px;
+  text-align: center;
+}
+
+/* 文字設定:親と同じ、内側上下余白:10px、内側左右余白:30px、文字間隔:8px、ボーダー:線幅1px/直線/カラー#666、背景色:#fff */
+main form button {
+  font: inherit;
+  padding: 10px 22px 10px 30px;
+  letter-spacing: 8px;
+  border: 1px solid #666;
+  background-color: #fff;
+  border-radius: 30px;
+  margin-bottom: 5px;
+}
+
+.attention {
+  padding-top: 5px;
+  padding-bottom: 100px;
+  color: #666;
+  font-size: 20px;
+}
+
+/* ブロック表示 */
+main dl div {
+  display: block;
+}
+
+/* レスポンシブ */
+/* スマホ縦の書式 */
+@media (max-width: 575px) {
+  /* ブロック表示 */
+  main dl div {
+    display: block;
+  }
+  /* 内側上余白:15px、下ボーダー:線幅1px/直線/カラー#666、内側下余白:5px、外側下余白:10px */
+  main dt {
+    padding-top: 15px;
+    border-bottom: 1px solid #666;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+
+  main article > p {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  main aside ul {
+    font-size: 12px;
+    line-height: 1.5;
+    list-style-type: disc;
+    padding-top: 100px;
+    margin-left: 1.5em;
+    padding-bottom: 20px;
+  }
+
+  main dt {
+    font-size: 20px;
+  }
+
+  main dt span {
+    font-size: 15px;
+  }
+
+  main label {
+    font-size: 20px;
+  }
+
+  main input {
+    font-size: 20px;
+  }
+
+  main textarea {
+    font-size: 20px;
+  }
+
+  main form button {
+    font-size: 50%;
+  }
+
+  .attention {
+    font-size: 30%;
+  }
+}
