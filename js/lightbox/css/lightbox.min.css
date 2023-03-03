@@ -50,11 +50,12 @@ body.lb-disable-scrolling {
   display: table;
   clear: both;
 }
-.lb-loader {
+/* ローダーの削除 */
+/* .lb-loader {
   top: 43%;
   height: 25%;
   width: 100%;
-}
+} */
 .lb-cancel {
   display: block;
   width: 32px;
@@ -175,7 +176,7 @@ body.lb-disable-scrolling {
 }
 
 /* レスポンシブのライトボックス */
-@media (max-width: 575px) {
+/* @media (max-width: 575px) {
   .lb-nav a.lb-prev {
     float: unset;
     background-image: none;
@@ -191,4 +192,4 @@ body.lb-disable-scrolling {
     cursor: unset;
     display: none;
   }
-}
+} */
