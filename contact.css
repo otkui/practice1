@@ -139,11 +139,12 @@ main dl div {
   }
 
   main aside ul {
+    width: 80%;
     font-size: 12px;
     line-height: 1.5;
     list-style-type: disc;
     padding-top: 100px;
-    margin-left: 1.5em;
+    margin-left: 3em;
     padding-bottom: 20px;
   }
 
