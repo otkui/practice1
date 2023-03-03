@@ -50,12 +50,11 @@ body.lb-disable-scrolling {
   display: table;
   clear: both;
 }
-/* ローダーの削除 */
-/* .lb-loader {
+.lb-loader {
   top: 43%;
   height: 25%;
   width: 100%;
-} */
+}
 .lb-cancel {
   display: block;
   width: 32px;
