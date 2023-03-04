@@ -79,7 +79,7 @@ p.linkA a:hover {
 
 .linkG {
   /* 背景画像 */
-  background-image: url(../img/h_2.png);
+  background-image: url(https://github.com/otkui/practice1/blob/main/img/h_2.png?raw=true);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -104,7 +104,7 @@ p.linkG a {
   margin-top: 73px;
   margin-left: 0;
   /* 矢印 */
-  background-image: url(../img/yajirushi.svg);
+  background-image: url(https://otkui.github.io/practice1/img/yajirushi.svg);
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: right 3px center;
@@ -117,7 +117,7 @@ p.linkG a:hover {
 
 .linkP {
   /* 背景画像 */
-  background-image: url(../img/h_3.png);
+  background-image: url(https://github.com/otkui/practice1/blob/main/img/h_3.png?raw=true);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -142,7 +142,7 @@ p.linkP a {
   margin-top: 73px;
   margin-left: 0;
   /* 矢印 */
-  background-image: url(../img/yajirushi.svg);
+  background-image: url(https://otkui.github.io/practice1/img/yajirushi.svg);
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: right 3px center;
