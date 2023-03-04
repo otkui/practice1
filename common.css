@@ -29,6 +29,39 @@ a:hover {
   position: relative;
 }
 
+/* 画面の動き */
+/* ふわっと表示 */
+
+/* アニメーションスタート遅延時間 */
+.delay-time02 {
+  animation-delay: 0.2s;
+}
+.delay-time04 {
+  animation-delay: 0.4s;
+}
+
+.box {
+  opacity: 0;
+}
+
+.fadedown {
+  animation-name: fadeDownAnime;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes fadeDownAnime {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* ヘッダーの書式 */
 header {
   height: 145px;
@@ -267,13 +300,14 @@ footer .toplogo {
   /* 幅:0, 高さ:100%-header高さpx, ボーダー:なし, ドロップシャドウ:-3px 0 6px rgba(0, 0, 0, 0.2), 配置:absolute, 上:header高さpx, 右:0, 切り替え:0.5s, オーバーフローX:隠す, 折り返さない */
   nav {
     width: 0;
-    /* height: calc(100% - 160px); */
+    height: calc(100%);
     border: none;
     box-shadow: -3px 0 6px rgba(0, 0, 0, 0.2);
     position: fixed;
+    z-index: 1;
     top: 0;
     right: 0;
-    height: 100%;
+    /* height: 100%; */
     transition: 0.5s;
     overflow-x: hidden;
     white-space: nowrap;
