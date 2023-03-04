@@ -155,7 +155,7 @@ p.linkP a:hover {
 
 .linkC {
   /* 背景画像 */
-  background-image: url(https://github.com/otkui/practice1/blob/main/img/h_4.png?raw=true);
+  background-image: url();
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
