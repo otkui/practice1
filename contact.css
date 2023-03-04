@@ -93,6 +93,7 @@ main form p {
 /* 文字設定:親と同じ、内側上下余白:10px、内側左右余白:30px、文字間隔:8px、ボーダー:線幅1px/直線/カラー#666、背景色:#fff */
 main form button {
   font: inherit;
+  color: rgb(40, 36, 31);
   padding: 10px 22px 10px 30px;
   letter-spacing: 8px;
   border: 1px solid #666;
