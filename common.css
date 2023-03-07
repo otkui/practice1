@@ -29,6 +29,10 @@ a:hover {
   position: relative;
 }
 
+img {
+  pointer-events: none;
+}
+
 /* 画面の動き */
 /* ふわっと表示 */
 
