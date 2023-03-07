@@ -166,6 +166,11 @@ footer .toplogo {
 
 /* レスポンシブ */
 @media (max-width: 575px) {
+  
+  img {
+  pointer-events: none;
+}
+  
   /* ヘッダーの書式 */
   p.toplogo {
     width: 68%;
