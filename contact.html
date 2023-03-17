@@ -52,27 +52,28 @@
             </ul>
           </aside>
 
-          <form action="thanks.html" method="post">
+          <form action="https://ssl.form-mailer.jp/fm/service/Forms/confirm" method="post" name="form1" enctype="multipart/form-data" accept-charset="UTF-8">
+            <input type="hidden" name="key" value="2a325c72778754">
             <dl>
               <div>
                 <dt>お名前<span>※</span></dt>
-                <dd><input type="text" maxlength="20" required></dd>
+                <dd><input type="text" name="field_6763796" maxlength="20" required></dd>
               </div>
 
               <div>
                 <dt>メールアドレス<span>※</span></dt>
-                <dd><input type="email" maxlength="30" placeholder="info@○○○.com" required></dd>
+                <dd><input type="email" name="field_6763789" maxlength="30" placeholder="info@○○○.com" required></dd>
               </div>
 
               <div>
                 <dt>お問い合わせの種類</dt>
                 <dd>
                   <label>
-                    <input type="radio" name="category">
+                    <input name="field_6763802" type="radio" value="0">
                     ご依頼
                   </label>
                   <label>
-                    <input type="radio" name="category">
+                    <input name="field_6763802" type="radio" value="1">
                     ご質問
                   </label>
                 </dd>
@@ -80,11 +81,13 @@
 
               <div>
                 <dt>内容</dt>
-                <dd><textarea maxlength="100" placeholder="100文字以内" required></textarea></dd>
+                <dd><textarea name="field_6763803" maxlength="100" placeholder="100文字以内" required></textarea></dd>
               </div>
             </dl>
             <p><button>送信</button></p>
-            <p class="attention">※練習用サイトです！実際には送信されません</p>
+            <input type="hidden" name="code" value="utf8">
+
+            <!-- <p class="attention">※練習用サイトです！実際には送信されません</p> -->
           </form>
 
         </article>
