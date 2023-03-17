@@ -1,5 +1,3 @@
-/* 128~152行目、キャプション削除済 */
-
 .lb-loader,
 .lightbox {
   text-align: center;
@@ -127,7 +125,7 @@ body.lb-disable-scrolling {
   display: table;
   clear: both;
 }
-/* .lb-data {
+.lb-data {
   padding: 0 4px;
   color: #ccc;
 }
@@ -151,8 +149,7 @@ body.lb-disable-scrolling {
   padding-bottom: 1em;
   font-size: 12px;
   color: #999;
-} */
-
+}
 .lb-data .lb-close {
   display: block;
   float: right;
@@ -173,22 +170,3 @@ body.lb-disable-scrolling {
   filter: alpha(Opacity=100);
   opacity: 1;
 }
-
-/* レスポンシブのライトボックス */
-/* @media (max-width: 575px) {
-  .lb-nav a.lb-prev {
-    float: unset;
-    background-image: none;
-  }
-
-  .lb-nav a.lb-next {
-    float: unset;
-    background-image: none;
-  }
-
-  .lb-next,
-  .lb-prev {
-    cursor: unset;
-    display: none;
-  }
-} */
