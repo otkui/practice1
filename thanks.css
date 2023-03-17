@@ -2,6 +2,7 @@
 
 main article p {
   text-align: center;
+  line-height: 40px;
   padding-top: 100px;
 }
 .thankspic {
@@ -30,6 +31,10 @@ main article p {
 /* レスポンシブ */
 /* スマホ縦の書式 */
 @media (max-width: 575px) {
+  main article p {
+    line-height: 20px;
+  }
+  
   main article h1 {
     font-size: 90%;
     margin-top: 50px;
