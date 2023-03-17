@@ -64,6 +64,9 @@ main textarea {
 input:focus {
   outline: 1px solid rgb(40, 36, 31);
 }
+textarea:focus {
+  outline: 1px solid rgb(40, 36, 31);
+}
 
 /* 右余白:10px */
 main dd label {
