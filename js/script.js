@@ -33,9 +33,9 @@ $(window).scroll(function () {
   // console.log(sc);
   // scがブラウザの1/3を超えたら表示
  if (sc > $(window).height() / 3) {
-    $("footer p.pagetop").fadeIn(500);
+    $("p.pagetop").fadeIn(500);
   } else {
-    $("footer p.pagetop").fadeOut(500);
+    $("p.pagetop").fadeOut(500);
   }
 });
 
