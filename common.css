@@ -9,6 +9,11 @@ body {
   background-color: snow;
 }
 
+/* lightboxくるくるを非表示
+.lb-loader {
+  display: none !important;
+} */
+
 a {
   color: inherit;
   text-decoration: none;
@@ -69,6 +74,27 @@ img {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* 左からフェードイン */
+
+.fadeLeft {
+  animation-name: fadeLeftAnime;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeLeftAnime {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -169,11 +195,6 @@ footer .toplogo {
 
 /* レスポンシブ */
 @media (max-width: 575px) {
-  
-  img {
-  pointer-events: none;
-}
-  
   /* ヘッダーの書式 */
   p.toplogo {
     width: 68%;
@@ -222,6 +243,29 @@ footer .toplogo {
     height: 25px;
     position: fixed;
     right: 10px;
+    bottom: 10px;
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  p.toplogo {
+    width: 68%;
+    height: 68%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* メイン */
+  .topimg {
+    max-width: 1440px;
+    max-height: 879px;
+    padding-top: 200px;
+  }
+  p.pagetop {
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    right: 7px;
     bottom: 10px;
     display: none;
   }
@@ -296,15 +340,10 @@ footer .toplogo {
 /* ～～～～～～～～～～～～～～～～ */
 
 /* ～575以下の時は３本線を表示させる～ */
-@media (max-width: 575px) {
+@media (max-width: 575px), (max-width: 991px) {
   .hmenu {
     display: flex;
   }
-
-  /* Aパターンモバイルメニュー */
-  /* nav {
-    display: none;
-  } */
 
   nav li {
     display: block;
