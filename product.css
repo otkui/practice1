@@ -153,7 +153,7 @@ footer {
     margin-top: 200px;
   }
 }
-@media (max-width: 991px) {
+@media (min-width: 576px) and (max-width: 991px) {
   .calendar {
     padding-top: 181px;
     width: 90%;
