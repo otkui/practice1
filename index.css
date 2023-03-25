@@ -4,8 +4,6 @@
 p.topimg {
   /* background-color: blueviolet; */
   width: 600px;
-  /* position: absolute;
-  z-index: 1; */
   padding-top: 100px;
   right: 100px;
   top: 197px;
@@ -15,16 +13,6 @@ p.topimg {
   margin-left: auto;
   padding-right: 100px;
 }
-
-/* トップページ文字Artworkspace */
-/* h1 {
-  font-size: 68px;
-  position: absolute;
-  z-index: 2;
-  top: 547px;
-  color: rgb(40, 36, 31);
-  border-bottom: 2px solid rgb(40, 36, 31);
-} */
 
 /* リンクボタン背景 */
 section.linkback {
@@ -50,6 +38,7 @@ section.linkback {
   display: inline-block;
   margin-top: 182px;
   margin-left: 251px;
+  box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.2);
 }
 
 p.linkA a {
@@ -59,22 +48,61 @@ p.linkA a {
   width: 240px;
   height: 104px;
   /* 文字 */
-  font-size: 42px;
-  line-height: 42px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
   text-align: center;
   padding-top: 29px;
-  margin-top: 73px;
+  margin-top: 158px;
   margin-left: 0;
-  /* 矢印 */
-  background-image: url(https://otkui.github.io/practice1/img/yajirushi.svg);
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: right 3px center;
 }
 
 p.linkA a:hover {
   /* ホバー */
   text-decoration: none;
+}
+
+/* more→ */
+span.more {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+/* 透かし文字 */
+p.shadowfont {
+  font-size: 280px;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.2;
+  margin-top: 90px;
+  margin-left: 350px;
+}
+
+p.shadowfont2 {
+  font-size: 280px;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.2;
+  margin-top: -20px;
+  margin-left: 350px;
+}
+
+p.shadowfont3 {
+  font-size: 280px;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.2;
+  margin-top: -20px;
+  margin-left: 350px;
+}
+
+p.shadowfont4 {
+  font-size: 280px;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.2;
+  margin-top: -20px;
+  margin-left: 350px;
 }
 
 .linkG {
@@ -88,6 +116,7 @@ p.linkA a:hover {
   display: inline-block;
   margin-top: 75px;
   margin-left: 251px;
+  box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.2);
 }
 
 p.linkG a {
@@ -97,17 +126,13 @@ p.linkG a {
   width: 240px;
   height: 104px;
   /* 文字 */
-  font-size: 42px;
-  line-height: 42px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
   text-align: center;
   padding-top: 29px;
-  margin-top: 73px;
+  margin-top: 158px;
   margin-left: 0;
-  /* 矢印 */
-  background-image: url(https://otkui.github.io/practice1/img/yajirushi.svg);
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: right 3px center;
 }
 
 p.linkG a:hover {
@@ -126,6 +151,7 @@ p.linkG a:hover {
   display: inline-block;
   margin-top: 75px;
   margin-left: 251px;
+  box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.2);
 }
 
 p.linkP a {
@@ -135,17 +161,13 @@ p.linkP a {
   width: 240px;
   height: 104px;
   /* 文字 */
-  font-size: 42px;
-  line-height: 42px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
   text-align: center;
   padding-top: 29px;
-  margin-top: 73px;
+  margin-top: 158px;
   margin-left: 0;
-  /* 矢印 */
-  background-image: url(https://otkui.github.io/practice1/img/yajirushi.svg);
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: right 3px center;
 }
 
 p.linkP a:hover {
@@ -164,6 +186,7 @@ p.linkP a:hover {
   display: inline-block;
   margin-top: 75px;
   margin-left: 251px;
+  box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.2);
 }
 
 p.linkC a {
@@ -173,17 +196,13 @@ p.linkC a {
   width: 240px;
   height: 104px;
   /* 文字 */
-  font-size: 42px;
-  line-height: 42px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
   text-align: center;
   padding-top: 29px;
-  margin-top: 73px;
+  margin-top: 158px;
   margin-left: 0;
-  /* 矢印 */
-  background-image: url(https://otkui.github.io/practice1/img/yajirushi.svg);
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: right 3px center;
 }
 
 p.linkC a:hover {
@@ -199,13 +218,6 @@ p.linkC a:hover {
     max-width: 100%;
     padding-right: 10px;
   }
-
-  /* h1 {
-    font-size: 40px;
-    position: static;
-    margin-top: 100px;
-    border-bottom: unset;
-  } */
 
   /* リンクボタン背景 */
   section.linkback {
@@ -240,7 +252,7 @@ p.linkC a:hover {
     margin-top: 25%;
     margin-left: 15%;
   }
-  
+
   .linkC {
     /* 背景画像 */
     width: 90%;
@@ -254,10 +266,13 @@ p.linkC a:hover {
     width: 60%;
     height: 80%;
     /* 文字 */
-    font-size: 80%;
-    /* 矢印 */
-    background-size: 20px;
-    background-position: right 3px bottom 10px;
+    font-size: 60%;
+    line-height: 25px;
+    margin-top: 85px;
+  }
+
+  span.more {
+    font-size: 60%;
   }
 
   p.linkG a {
@@ -265,10 +280,9 @@ p.linkC a:hover {
     width: 60%;
     height: 80%;
     /* 文字 */
-    font-size: 80%;
-    /* 矢印 */
-    background-size: 20px;
-    background-position: right 3px bottom 10px;
+    font-size: 60%;
+    line-height: 25px;
+    margin-top: 85px;
   }
 
   p.linkP a {
@@ -276,21 +290,87 @@ p.linkC a:hover {
     width: 60%;
     height: 80%;
     /* 文字 */
-    font-size: 80%;
-    /* 矢印 */
-    background-size: 20px;
-    background-position: right 3px bottom 10px;
+    font-size: 60%;
+    line-height: 25px;
+    margin-top: 85px;
   }
-  
+
   p.linkC a {
     /* テキストボックス */
     width: 60%;
     height: 80%;
     /* 文字 */
-    font-size: 80%;
-    /* 矢印 */
-    background-size: 20px;
-    background-position: right 3px bottom 10px;
+    font-size: 60%;
+    line-height: 25px;
+    margin-top: 85px;
+  }
+
+  p.shadowfont {
+    font-size: 100px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.4;
+    margin-top: 70px;
+    margin-left: 20px;
+  }
+  p.shadowfont2,
+  p.shadowfont3,
+  p.shadowfont4 {
+    font-size: 100px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.4;
+    margin-top: 20px;
+    margin-left: 20px;
   }
 }
+@media (max-width: 991px) {
+  p.topimg {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  section.linkback {
+    width: 80%;
+    height: 90%;
+    background-color: #fff;
+    margin-left: 0;
+    padding-top: 0;
+    padding-bottom: 100px;
+  }
+  .linkA {
+    /* 背景画像 */
+    width: 90%;
+    height: 90%;
+    margin-top: 35%;
+    margin-left: 15%;
+  }
+  .linkG,
+  .linkP,
+  .linkC {
+    /* 背景画像 */
+    width: 90%;
+    height: 90%;
+    margin-top: 25%;
+    margin-left: 15%;
+  }
+  p.shadowfont {
+    font-size: 180px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.4;
+    margin-top: 150px;
+    margin-left: 20px;
+  }
+  p.shadowfont2,
+  p.shadowfont3,
+  p.shadowfont4 {
+    font-size: 200px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.4;
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+}
