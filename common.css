@@ -248,7 +248,7 @@ footer .toplogo {
   }
 }
 
-@media (max-width: 991px) {
+@media (min-width: 576px) and (max-width: 991px) {
   p.toplogo {
     width: 68%;
     height: 68%;
@@ -340,7 +340,7 @@ footer .toplogo {
 /* ～～～～～～～～～～～～～～～～ */
 
 /* ～575以下の時は３本線を表示させる～ */
-@media (max-width: 575px), (max-width: 991px) {
+@media (max-width: 575px), (min-width: 576px) and (max-width: 991px) {
   .hmenu {
     display: flex;
   }
