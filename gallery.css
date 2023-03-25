@@ -75,3 +75,13 @@ div#lightbox {
     gap: 20px;
   }
 }
+@media (max-width: 991px) {
+  .flexback2 {
+    margin-top: 180px;
+    margin-bottom: 300px;
+  }
+
+  .flex p img {
+    width: 300px;
+  }
+}
