@@ -113,7 +113,7 @@ p.kaisetsu {
     padding-top: 100px;
   }
 }
-@media (max-width: 991px) {
+@media (min-width: 576px) and (max-width: 991px) {
   .flexback {
     /* background-color: aquamarine; */
     width: 90%;
