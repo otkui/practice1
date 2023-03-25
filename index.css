@@ -324,7 +324,7 @@ p.linkC a:hover {
     margin-left: 20px;
   }
 }
-@media (max-width: 991px) {
+@media (min-width: 576px) and (max-width: 991px) {
   p.topimg {
     max-width: 100%;
     margin-left: auto;
